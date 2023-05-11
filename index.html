@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <header>Sing Up</header>
+        <form action="https://www.youtube.com/watch?v=DLLl767HjhE&list=RDDLLl767HjhE&start_radio=1" >
+
+            <div class="field username-field">
+                <div class="input-field">
+                    <input type="text" placeholder="enter a username" class="username">
+                </div>
+                <span class="error username-error">
+                    <i class="bx bx-error-circle error-icon"></i>                   
+                    <p class="error-text">enter correctly username</p>
+                </span>
+            </div>
+
+            <div class="field date-field">
+                <div class="input-field">
+                    <input type="date" placeholder="enter a date" class="date">
+                </div>
+                <span class="error date-error">
+                    <i class="bx bx-error-circle error-icon"></i>                   
+                    <p class="error-text">this is only available for +16 people</p>
+                </span>
+            </div>
+
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" placeholder="enter a email" class="email">
+                </div>
+                <span class="error email-error">
+                    <i class="bx bx-error-circle error-icon"></i>                   
+                    <p class="error-text">enter validate email</p>
+                </span>
+            </div>
+
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" placeholder="create password" class="password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>                   
+                    <p class="error-text">Please enter atleast 8 charatcer with number, symbol, small and capital letter.</p>
+                </span>
+            </div>
+
+            <div class="field confrim-password">
+                <div class="input-field">
+                    <input type="password" placeholder="confrim password" class="cPassword">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error cPassword-error">
+                    <i class="bx bx-error-circle error-icon"></i>                   
+                    <p class="error-text">confrim your passsword</p>
+                </span>
+            </div>
+
+            <div class="input-field button">
+                <input type="submit" value="Submit Now"/>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="app.js" defer></script>
+</body>
+</html>
